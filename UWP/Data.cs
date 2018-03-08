@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace UwB_UI
+namespace UWP
 {
 	public class Table
 	{
 		public Table(params (int key, List<DateTime> times)[] records) =>
 			this.Records = records.ToDictionary(i => i.key, i => i.times);
 
-		public Table(Dictionary<int, List<DateTime>> records) => 
+		public Table(Dictionary<int, List<DateTime>> records) =>
 			this.Records = records;
 
 		public override string ToString() =>
