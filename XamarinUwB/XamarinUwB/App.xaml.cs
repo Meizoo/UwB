@@ -13,7 +13,7 @@ namespace XamarinUwB
 		{
 			InitializeComponent();
 
-			MainPage = new XamarinUwB.MainPage();
+			MainPage = new MainPage();
 		}
 
 		protected override void OnStart ()
