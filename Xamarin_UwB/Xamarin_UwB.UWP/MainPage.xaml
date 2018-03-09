@@ -11,5 +11,13 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="0" Content="Tryb podglądu" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" />
+        <Button Grid.Column="1" Content="Tryb edycji" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="24" />
+
     </Grid>
 </forms:WindowsPage>
