@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Xamarin_UwB.Droid</RootNamespace>
     <AssemblyName>Xamarin_UwB.Android</AssemblyName>
-    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -80,9 +80,9 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xamarin_UwB\Xamarin_Prime.csproj">
-      <Project>{8FFBC958-581B-4A8A-BB12-939C211FF7C7}</Project>
-      <Name>Xamarin_Prime</Name>
+    <ProjectReference Include="..\Xamarin_UwB\Xamarin_UwB.csproj">
+      <Project>{098CF3F2-EDA9-4DFE-98A5-DFEAC924B8E1}</Project>
+      <Name>Xamarin_UwB</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
