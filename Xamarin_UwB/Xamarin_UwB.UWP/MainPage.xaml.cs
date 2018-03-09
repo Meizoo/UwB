@@ -1,27 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+﻿using Windows.UI.Xaml.Controls;
+using Uwp = Windows.UI.Xaml;
 
 namespace Xamarin_UwB.UWP
 {
-    public sealed partial class MainPage
+	public sealed partial class MainPage
     {
         public MainPage()
         {
             this.InitializeComponent();
 
-            LoadApplication(new Xamarin_UwB.App());
-        }
+			Current = this;
+
+			this.HiddenFrame = new Frame() {
+				Visibility = Uwp.Visibility.Collapsed
+			};
+
+
+			//LoadApplication(new Xamarin_Prime.App());
+		}
+
+		public static MainPage Current;
+
+		private Frame HiddenFrame = null;
     }
 }

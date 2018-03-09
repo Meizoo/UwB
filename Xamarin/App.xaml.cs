@@ -5,15 +5,15 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace Xamarin_Prime
+namespace Xamarin
 {
 	public partial class App : Application
 	{
 		public App ()
 		{
 			InitializeComponent();
-			
-			MainPage = new Xamarin_Prime.MainPage();
+
+			MainPage = new Xamarin.MainPage();
 		}
 
 		protected override void OnStart ()

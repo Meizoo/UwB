@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Xamarin_Prime
+namespace Xamarin
 {
 	public partial class MainPage : ContentPage
 	{
